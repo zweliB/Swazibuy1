@@ -1,0 +1,18 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+      <mat-toolbar color="primary">Login To SwaziBuy Admin Dashboard</mat-toolbar>
+      <form fxLayoutAlign="stretch" fxLayout="column" [formGroup]="formGroup">
+        <mat-form-field>
+          <mat-label>Username:</mat-label>
+          <input matInput name="email" placeholder="User Name" formControlName="email">
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>Password:</mat-label>
+          <input matInput name="password" type="password" placeholder="Password" formControlName="password">
+        </mat-form-field>
+        <button mat-raised-button (click)="loginProcess()" type="submit">Login</button>
+      </form>
+    </mat-card>
+  </div>
+  
